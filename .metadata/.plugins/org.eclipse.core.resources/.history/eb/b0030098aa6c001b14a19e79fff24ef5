@@ -1,0 +1,101 @@
+package apresentacao;
+
+import java.awt.Color;
+
+import javax.swing.JButton;
+import javax.swing.JDesktopPane;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+import negocio.Pessoa;
+
+
+
+public class VisaoCadastro extends JFrame {
+	// PROPRIEDADES
+	private static final long serialVersionUID = 1L;
+	
+	JDesktopPane objContainer = new JDesktopPane();
+	
+	private JLabel lblNome = new JLabel("Nome");
+	private JTextField txtNome = new JTextField();
+	
+	private JLabel lblProfissao = new JLabel("Profissão");
+	private JTextField txtProfissao = new JTextField();
+
+	
+	private JLabel lblAno = new JLabel("Ano de Nascimento");
+	private JTextField txtAno = new JTextField();
+	
+	private JLabel lblAltura = new JLabel("Altura");
+	private JTextField txtAltura = new JTextField();
+	
+	private JButton btnCadastrar = new JButton("Cadastrar");
+	private JButton btnSair = new JButton("Sair");
+	
+	// METODO PRINCIPAL
+	public static void main(String[] args) {
+		new VisaoCadastro().setVisible(true);
+	}
+	
+	// CONFIGURAÇÃO DA JANELA
+	public VisaoCadastro() {
+		setTitle("Cadastro de Pessoas");
+		setSize(800, 600);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setLocationRelativeTo(null);
+		
+	// CONFIGURAÇÃO DO CONTAINER
+		objContainer.setBackground(Color.LIGHT_GRAY);
+		setContentPane(objContainer);
+	
+	
+	// NOME
+		lblNome.setBounds(30, 90, 60, 30);
+		objContainer.add(lblNome);
+		txtNome.setBounds(30, 115, 400, 25);
+		objContainer.add(txtNome);
+		
+	// PROFISSAO
+		lblProfissao.setBounds(30, 200, 60, 30);
+		objContainer.add(lblProfissao);
+		txtProfissao.setBounds(30, 225, 300, 25);
+		objContainer.add(txtProfissao);
+		
+	
+	// ANO
+		lblAno.setBounds(30, 300, 120, 30);
+		objContainer.add(lblAno);
+		txtAno.setBounds(30, 325, 100, 25);
+		objContainer.add(txtAno);
+		
+	// ALTURA
+		lblAltura.setBounds(330, 300, 120, 30);
+		objContainer.add(lblAltura);
+		txtAltura.setBounds(330, 325, 100, 25);
+		objContainer.add(txtAltura);
+		
+	// BOTAO
+		btnCadastrar.setBounds(550, 500, 100, 30);
+		btnCadastrar.addActionListener(new ControladorCadastrar(objContainer, txtNome, txtProfissao, txtAno, txtAltura));
+		objContainer.add(btnCadastrar);
+		
+		
+		
+		btnSair.setBounds(450, 500, 100, 30 );
+		btnSair.addActionListener(new ControladorSair());
+		objContainer.add(btnSair);
+		
+	
+		}
+
+	public String recuperar() {
+		String retorno = "";
+		
+		retorno = new Pessoa().getNome();
+		
+		return retorno;	
+	}
+
+}

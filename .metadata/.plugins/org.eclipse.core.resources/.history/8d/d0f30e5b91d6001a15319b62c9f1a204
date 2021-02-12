@@ -1,0 +1,86 @@
+import java.util.Scanner;
+
+public class MediaNota {
+
+      public static void main(String[] args) {
+    	  Scanner leitor = new Scanner(System.in);
+    
+		/*int media1 = 0;
+		int media2 = 0;
+		int media3 = 0;
+		int soma = 0;
+		int a = 8;
+		int b = 9;
+		int c = 7;
+		int d = 4;
+		int e = 5;
+		int f = 6;
+		
+		media1 = ((a + b + c)/3);
+		System.out.println(" A primeira média é: " + media1);
+		
+		media2 = ((d + e + f)/3);
+		System.out.println(" A segunda média é " + media2);
+		
+		soma = media1 + media2;
+		System.out.println(" A soma das médias: " + soma);
+		
+		media3 = (soma/2);
+		System.out.println(" A média do número acima é: " + media3);*/
+    	 /* float salario = 0f;
+    	  float salarioMin = 788f;
+    	  float qtdSalarioMn = 0f;
+    	  System.out.print(" Informe o seu salario: ");
+    	  salario = leitor.nextInt();
+    	  
+    	 qtdSalarioMn = salario/salarioMin;
+    	  System.out.println(" Quantidade de salarios mínimos em seu salário é:  " + qtdSalarioMn);*/
+    	  
+    	  /*int n = 0;
+    	  System.out.print(" Digite um número: " );
+    	  n = leitor.nextInt();
+    	  leitor.close();
+    	  
+    	  System.out.println(" O seu antecessor é: " + (n-=1));
+    	 
+    	  System.out.println(" O seu sucessor é: " + (n+=2));*/
+    	  int anoAtual = 2020;
+    	  int mes = 12;
+    	  int dia = 30;
+    	  int anoNasc = 0;
+    	  int mesNasc = 0;
+    	  int diaNasc = 0;	
+    	  int idadeAno;
+    	  int idadeMes;
+    	  int idadeDia;
+    	  int total = 0;
+    	
+    	  System.out.print(" Informe o ano em que você nasceu: ");
+    	 anoNasc = leitor.nextInt();
+    	 System.out.print(" Informe o mes em que você nasceu: ");
+    	 mesNasc = leitor.nextInt();
+    	 System.out.print(" Informe o dia em que você nasceu: ");
+    	 diaNasc = leitor.nextInt();
+         leitor.close();
+         
+         idadeAno = (anoAtual - anoNasc);
+         idadeMes = (mes - mesNasc);
+         idadeDia = (dia - diaNasc);
+         total = ((idadeAno * 365) + (idadeMes * 30) + (idadeDia));
+         
+         
+         System.out.println(" Você tem " + idadeAno + " anos, " + idadeMes + " meses e " + idadeDia + " dias = " + total + " dias");
+         
+         
+	
+
+	
+	}
+	
+	
+	
+	
+	
+	
+
+}

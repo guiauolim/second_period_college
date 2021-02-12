@@ -1,0 +1,44 @@
+
+
+import java.util.Scanner;
+
+
+
+public class Cliente extends Main {
+	String nome;
+	String email;
+	String salvar;
+	int idade;
+	int valor;
+	
+	public String nome () {
+		Scanner leitor = new Scanner(System.in);
+		System.out.print(" Digite seu nome: ");
+		nome = leitor.next();
+		leitor.close();
+		return nome;
+		}
+	
+	public String email () {
+		Scanner leitor = new Scanner(System.in); 
+		System.out.print(" Digite o seu email: ");
+		email = leitor.next();
+		leitor.close();
+		return email;
+	}
+	
+	public int idade (int valor) {
+		return idade;
+		
+	}
+	public String salvar() {
+		System.out.println(" Usuário cadastrado! ");
+		return salvar;
+	}
+	
+	} 
+	
+	
+	
+
+

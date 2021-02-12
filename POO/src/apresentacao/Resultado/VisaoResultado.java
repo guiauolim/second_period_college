@@ -1,0 +1,54 @@
+package apresentacao.Resultado;
+
+import java.awt.Color;
+
+import javax.swing.JInternalFrame;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+
+
+
+public class VisaoResultado extends JInternalFrame {
+	
+	private static final long serialVersionUID = 1L;
+	
+	private JPanel oBJPainel = new JPanel();
+	private JTextArea txtResultado = new JTextArea();
+	private JScrollPane jspResultado = new JScrollPane(txtResultado);
+	
+	
+	
+	
+	// CONFIGURAÇÃO
+	public VisaoResultado() {
+	    super("Resultado", false, true, true, true);
+		setSize(750,550);
+		setDefaultCloseOperation(HIDE_ON_CLOSE);
+		
+	// PAINEL
+		oBJPainel.setLayout(null);
+		setContentPane(oBJPainel);
+		oBJPainel.setBackground(Color.LIGHT_GRAY);
+		
+	// RESULTADO
+		jspResultado.setBounds(50, 100, 500, 300);
+		oBJPainel.add(jspResultado);
+		txtResultado.setLineWrap(true);
+		
+		try {
+		txtResultado.setText("Gravação realizada com sucesso!");
+		
+		//txtResultado.append(new Pessoa().recuperarTodos());
+		
+		} catch (Exception erro) {
+			JOptionPane.showMessageDialog(null, erro);
+		}
+	
+	} 
+	
+}
+
+	
+

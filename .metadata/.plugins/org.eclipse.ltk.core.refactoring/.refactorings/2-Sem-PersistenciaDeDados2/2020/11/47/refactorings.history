@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;apresentacao.VisãoTurma.java&apos; to &apos;VisaoTurma.java&apos;&#x0D;&#x0A;- Original project: &apos;2-Sem-PersistenciaDeDados2&apos;&#x0D;&#x0A;- Original element: &apos;apresentacao.VisãoTurma.java&apos;&#x0D;&#x0A;- Renamed element: &apos;apresentacao.VisaoTurma.java&apos;" description="Rename compilation unit &apos;VisãoTurma.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;apresentacao{VisãoTurma.java" name="VisaoTurma.java" references="false" stamp="1605814387299" version="1.0"/>
+</session>

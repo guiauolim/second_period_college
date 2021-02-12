@@ -1,0 +1,65 @@
+package apresentacao.Resultado;
+
+import java.awt.Color;
+
+import javax.swing.JDesktopPane;
+import javax.swing.JInternalFrame;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+
+import apresentacao.ControladorCadastrar;
+
+
+
+public class VisaoResultado extends JInternalFrame {
+	
+	private static final long serialVersionUID = 1L;
+	
+	private JPanel oBJPainel = new JPanel();
+	private JTextArea txtResultado = new JTextArea();
+	private JScrollPane jspResultado = new JScrollPane(txtResultado);
+	
+	
+	private JDesktopPane objContainer = null;
+	private JTextField txtNome = null;
+	private JTextField txtProfissao = null;
+	private JTextField txtAno = null;
+	private JTextField txtAltura = null;
+
+
+	
+	
+	
+	// CONFIGURAÇÃO
+	public VisaoResultado() {
+	    super("Resultado", false, true, true, true);
+		setSize(750,550);
+		setDefaultCloseOperation(HIDE_ON_CLOSE);
+		
+	// PAINEL
+		oBJPainel.setLayout(null);
+		setContentPane(oBJPainel);
+		oBJPainel.setBackground(Color.LIGHT_GRAY);
+		
+	// RESULTADO
+		jspResultado.setBounds(50, 100, 500, 300);
+		oBJPainel.add(jspResultado);
+		txtResultado.setLineWrap(true);
+		
+		try {
+		
+		txtResultado.append(new ControladorCadastrar().recuperar());
+		
+		} catch (Exception erro) {
+			JOptionPane.showMessageDialog(null, erro);
+		}
+	
+	} 
+	
+}
+
+	
+

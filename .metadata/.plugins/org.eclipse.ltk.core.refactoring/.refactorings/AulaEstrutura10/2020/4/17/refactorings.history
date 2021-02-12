@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;Equação2grau.java&apos; to &apos;Equacao2Grau.java&apos;&#x0D;&#x0A;- Original project: &apos;Aula10Estrutura&apos;&#x0D;&#x0A;- Original element: &apos;Equação2grau.java&apos;&#x0D;&#x0A;- Renamed element: &apos;Equacao2Grau.java&apos;" description="Rename compilation unit &apos;Equação2grau.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;{Equação2grau.java" name="Equacao2Grau.java" references="false" stamp="1587578489901" version="1.0"/>
+</session>

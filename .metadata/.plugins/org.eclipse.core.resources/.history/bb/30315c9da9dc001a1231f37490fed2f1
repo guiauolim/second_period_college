@@ -1,0 +1,16 @@
+import javax.swing.JOptionPane;
+
+public class Cliente {
+	String nome;
+	String email;
+	int idade;
+	
+	public String nome () {
+		String nome = JOptionPane.showInputDialog(" Digite o seu nome: ");
+		return nome;
+	} 
+	
+	
+	
+
+}
